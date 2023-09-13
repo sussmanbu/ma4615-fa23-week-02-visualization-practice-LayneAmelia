@@ -1,7 +1,7 @@
 ---
 title: "Week 02: COVID Visualization Activity"
 date: "September, 11 2023"
-author: "**`[[`**Your Name**`]]`**"
+author: "**`[[`**A Layne**`]]`**"
 ---
 
 Today, we'll be working with a data set related to COVID.
@@ -21,7 +21,8 @@ Try using the different data sets and see which ones are good for making which p
 
 
 ```{r first_plot}
-ggplot(covid_data_count, aes(x = date, y = Cases)) + geom_point()
+ggplot(covid_data_count, aes(x = date, y = Cases, color = race)) + geom_point() + labs(title = "big fancy title",
+                                                                                                                  subtitle = "This class puts the R in 'don't undeRstand'")
 ```
 
 
@@ -32,10 +33,10 @@ For now, see what you can do just using `ggplot`.
 ```{r}
 covid_data_count |> 
   filter(state == "MA") |> 
-  ggplot(aes(x = date, y = Cases, color = race)) + geom_line()
+  ggplot(aes(x = date, y = Cases, color = "pink")) + geom_line()
 ```
 
-1. Write code for a plot and describe what you observe?
-2. Are there any conclusions you can draw?
-3. What were you not able to do due to not having the R knowledge?
-4. What other data would be useful to better understand this data?
+1. Write code for a plot and describe what you observe? 
+2. Are there any conclusions you can draw? Covid is bad
+3. What were you not able to do due to not having the R knowledge? I dont understand the colors and it makes me sad
+4. What other data would be useful to better understand this data? 

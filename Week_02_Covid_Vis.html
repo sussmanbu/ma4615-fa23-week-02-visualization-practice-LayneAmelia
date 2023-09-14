@@ -152,9 +152,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <ol type="1">
 <li>Write code for a plot and describe what you observe?</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(covid_data_count, <span class="fu">aes</span>(<span class="at">x =</span> date, <span class="at">y =</span> Cases, <span class="at">color =</span> race)) <span class="sc">+</span> <span class="fu">geom_smooth</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 1385 rows containing non-finite values (`stat_smooth()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="Week_02_Covid_Vis_files/figure-html/wahhh-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(covid_data_count, <span class="fu">aes</span>(<span class="at">x =</span> date, <span class="at">y =</span> Cases, <span class="at">color =</span> race)) <span class="sc">+</span> <span class="fu">geom_boxplot</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 1385 rows containing non-finite values (`stat_boxplot()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="Week_02_Covid_Vis_files/figure-html/wahhhh-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Box is not good for these data…</p>
+<ol start="2" type="1">
 <li>Are there any conclusions you can draw? Covid is bad</li>
 <li>What were you not able to do due to not having the R knowledge? I dont understand the colors and it makes me sad</li>
-<li>What other data would be useful to better understand this data?</li>
+<li>What other data would be useful to better understand this data? COVID deaths</li>
 </ol>
 
 </main>

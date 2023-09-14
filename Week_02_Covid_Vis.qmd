@@ -37,6 +37,18 @@ covid_data_count |>
 ```
 
 1. Write code for a plot and describe what you observe? 
+```{r wahhh}
+ggplot(covid_data_count, aes(x = date, y = Cases, color = race)) + geom_smooth() 
+
+```
+```{r wahhhh}
+ggplot(covid_data_count, aes(x = date, y = Cases, color = race)) + geom_boxplot() 
+
+```
+Box is not good for these data...
+
+
 2. Are there any conclusions you can draw? Covid is bad
 3. What were you not able to do due to not having the R knowledge? I dont understand the colors and it makes me sad
 4. What other data would be useful to better understand this data? 
+COVID deaths
